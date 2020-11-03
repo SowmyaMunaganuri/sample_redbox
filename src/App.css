@@ -12,7 +12,10 @@
     animation: App-logo-spin infinite 20s linear;
   }
 }
-
+@font-face {
+  font-family: "cq";
+  src: url("./33407_SCOTTN.ttf") format("truetype");
+}
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -35,4 +38,25 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.k-grid-header .k-header>.k-link {
+  margin: -8px -12px;
+  padding: 8px 12px;
+  line-height: inherit;
+  display: block;
+  overflow: visible;
+  text-overflow: clip;
+  outline: 0;
+}
+.sick-days-warning {
+  background-color: rgb(238, 134, 134) !important;
+}
+.crownquest {
+  height: 6vh;
+  font-family: "cq";
+  font-size: 5vh;
+  color: #076324;
+  text-align: center;
+  background-color: #000000;
 }
