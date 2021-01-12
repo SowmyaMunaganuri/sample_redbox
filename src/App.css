@@ -1,62 +1,20 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
 @font-face {
   font-family: "cq";
   src: url("./33407_SCOTTN.ttf") format("truetype");
 }
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+
+.App {
+  text-align: center;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-.k-grid-header .k-header>.k-link {
-  margin: -8px -12px;
-  padding: 8px 12px;
-  line-height: inherit;
-  display: block;
-  overflow: visible;
-  text-overflow: clip;
-  outline: 0;
-}
-.sick-days-warning {
-  background-color: rgb(238, 134, 134) !important;
-}
 .crownquest {
-  height: 6vh;
+  height: 5vh;
   font-family: "cq";
-  font-size: 5vh;
+  font-size: 4vh;
   color: #076324;
   text-align: center;
   background-color: #000000;
+  position: sticky;
+  top:0px;
+  z-index: 100;
 }

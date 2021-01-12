@@ -1,14 +1,29 @@
-import React from 'react';
+import React,{Component} from 'react';
+import NavBar from './components/Navbar'
+import Drilling from './components/Drilling'
+import Completion from './components/Completion'
+import RedBox from './components/RedBox'
+import {BrowserRouter,Route,Switch} from 'react-router-dom';
 import './App.css';
-import MainTable from './components/MainTable'
-function App() {
-  return (
-    <div>
-      <div className='crownquest'>CrownQuest</div>
-        <p style={{fontWeight:'bold', fontSize:'30px'}}>CQ Horizontal Midland Basin Drilling Plan</p>
-        <MainTable/>
-    </div>
-  );
-}
 
-export default App;
+export default class App extends Component{
+  constructor(props){
+    super(props)
+  }
+  render(){
+    return(
+      <div>
+        <div className="crownquest">CROWNQUEST</div>
+        <BrowserRouter>
+        <NavBar/>
+        <Switch>
+          <Route exact path="/" component={Drilling}/>
+          <Route exact path="/completion" component={Completion}/>
+          <Route exact path="/redbox" component={RedBox}/>
+        </Switch>
+      </BrowserRouter>
+      </div>
+      
+    )
+  }
+}
