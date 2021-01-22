@@ -44,9 +44,9 @@ const api = {
 
 export const options = {
     root: baseUrl,
-    url: 'http://10.0.10.164:8080/playground',
-    url2: 'http://10.0.10.164:5000/playground',
-    url3: 'http://10.0.10.164:5002/playground',
+    url: 'http://10.0.10.162:8080/playground',
+    url2: 'http://10.0.10.162:5000/playground',
+    url3: 'http://10.0.10.162:5002/playground',
     //url: 'http://192.168.1.80:8080/playground',
     //url2: 'http://192.168.1.80:5000/playground',
     // url: 'http://localhost:8080/playground',

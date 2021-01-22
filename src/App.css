@@ -3,6 +3,10 @@
   src: url("./33407_SCOTTN.ttf") format("truetype");
 }
 
+body{
+  background-color: #474747;
+}
+
 .App {
   text-align: center;
 }
@@ -15,6 +19,180 @@
   text-align: center;
   background-color: #000000;
   position: sticky;
-  top:0px;
+  top: 0px;
   z-index: 100;
+}
+
+.rigsDiv {
+  display: flex;
+  vertical-align: top;
+  user-select: none;
+}
+
+.rigDiv {
+  text-align: center;
+  float: left;
+  margin: 1px;
+}
+
+.rigName {
+  background-color: white;
+  border: solid;
+  border-width: thin;
+  z-index: 10;
+  position: sticky;
+  top: calc(5vh + 54px);
+}
+
+.tankListDiv {
+  position: relative;
+  width: 200px;
+  /* border: solid;
+  border-width: thin; */
+  min-height: 80vh;
+  /* overflow-y: auto; */
+  /* overflow-x: hidden; */
+}
+
+.tankDiv {
+  /* border:solid; */
+  /* width: 200px; */
+  font-family: Arial;
+  border-radius: 3px;
+  font-size: 11px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: inset 0 0 2px;
+  /* outline: none; */
+  box-sizing: border-box;
+}
+
+.bull > .tankDiv {
+  min-height: 42px;
+}
+
+.nearWellListDiv {
+  width: 200px;
+  position: relative;
+}
+
+.nearWellDiv {
+  font-family: Arial;
+  /* font-size: 11px; */
+  border-radius: 5px;
+  box-shadow: inset 0 0 1px;
+  /* outline: none; */
+  box-sizing: border-box;
+}
+
+.nearWellDiv2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 200px;
+  font-size: 11px;
+  padding: 2px;
+  line-height: 1.2;
+}
+
+.buttonsBull {
+  float: right;
+  text-align: center;
+  vertical-align: top;
+  height: auto;
+  user-select: none;
+  position: sticky;
+  top: calc(5vh + 55px);
+  align-self: flex-start;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-evenly;
+  padding-bottom: 5px;
+}
+
+.bull {
+  height: 42vh;
+  width: 206px;
+  margin-bottom: 5px;
+  outline: solid thin;
+  background-color: white;
+  border-radius: 5px;
+  overflow-y: scroll;
+}
+
+.style1::-webkit-scrollbar {
+  width: 6px;
+  background-color: hsl(223, 43%, 27%);
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 4px silver;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: lightgray;
+  border-radius: 10px;
+  overflow-x: none;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: darkgray;
+}
+
+p {
+  margin: auto;
+}
+
+.currentDiv {
+  opacity: 0.9;
+  width: 200px;
+  border-radius: 5px;
+  /* font-size: 11px; */
+  /* line-height: 1; */
+  box-shadow: inset 0 0 2px;
+  background-color: green;
+  position: absolute;
+}
+
+.currentDiv:hover {
+  z-index: 9;
+}
+
+/* .ag-header-cell {
+  display: inline-flex;
+    align-items: center;
+    position: absolute;
+    height: auto;
+    white-space: normal;
+} */
+
+span.ag-header-cell-text {
+  white-space: normal;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  /* font-size: x-small; */
+}
+.ag-header-cell-label {
+  /* Necessary to allow for text to grow vertically */
+  height: 100%;
+  padding: 0 !important;
+}
+
+.redboxes{
+  background-color: rgb(212, 113, 113);
+  color: transparent;
+}
+
+.noafiled-red-text{
+  color: crimson;
+}
+
+.header{
+  text-align: center;
+  font-weight: bold;
 }
